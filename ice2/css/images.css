@@ -1,0 +1,25 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+}
+img{
+  height: 300px;
+  width: 300px;
+  border: 5px solid black;
+  border-
+  text-align: center;
+}
+.hover:hover{
+  border-radius:100%;
+}
+
+.active:hover{
+  opacity:0.5;
+  filter:drop-shadow(5px);
+}
+
+.focus:hover{
+  filter: grayscale(100%);
+  filter: gray;
+}
