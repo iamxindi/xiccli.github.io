@@ -1,65 +1,118 @@
-body{
-	height:100%;
+body {
+  background-color: grey;
+  margin: 0% 10% 5% 10%;
+  font-family: Times, Arial;
 }
-header{
-	text-align:right;
-	background-color: yellow;
-	font-size: 32px;
-	grid-area: header;
-}
-nav{
-	background-color:green;
-	color: #FFFFFF;
-	grid-area:nav;
-}
-nav ul {
-  margin: auto;
-  padding: 0 20px;
-  text-align: center;
-	display:grid;
-	justify-content:center;
-	grid-template-columns: repeat(5,20%);
-	grid-gap: 10px;
 
+header h1 {
+	text-align: right;
+  margin: 0px;
+  background-color: yellow;
+	font-size:3.3rem;
 }
-nav li{
-	background-color: black;
-	display:inline-block;
-	font-size: 18px;
+
+nav {
+  margin: 0px;
+  text-align:center;
+  background-color: green;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+nav li
+{
+  display: inline-block;
+  padding: 0.7rem 0rem;
+}
+
+nav a {
+	text-align: center;
 	text-decoration: none;
-	text-decoration-color: white;
+	font-size:1.1rem;
+  color: white;
+  background-color: black;
+  margin-left: 0.8px;
+  margin-right: 0.8px;
+	padding:0.7rem 3rem;
 }
 
 aside{
 	float:right;
 	background-color: white;
-	grid-area: right;
+	width: 20%;
+	height:500px;
+	dislay:inline;
+	background-image:url("../img/william-shakespeare.jpg");
+	background-position: center;
+	background-size:200px 200px;
+	background-repeat: no-repeat;
 }
 
-footer{
-	background-color: green;
-	grid-area:footer;
+aside h2{
+	margin-left: 2px;
+	font-size: 2rem;
+	margin-top:0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
-#wrap{
-	display: grid;
-	position:relative;
-	max-width: 900px;
-	margin:auto;
-  grid-gap: 10px;
-  grid-template-areas: "header header"
-     "nav nav"
-     "left right"
-     "footer footer";
-  grid-template-columns: 75% 25%;
-  grid-template-rows:10% 10% 70% 10%;
+aside ul{
+	font-size:1.1rem;
+	padding-left: 4rem;
+	padding-top:0px;
+	margin-top:0px;
+}
+
+aside ul li{
+	margin:2px;
+}
+
+
+.copyright{
+	background-color:green;
+	margin:0px;
+	height:25px;
+	text-align:center;
+	padding:12.5px;
 }
 
 #content{
-	background-color: gray;
+	background: #525252;
+	margin:0px;
+	padding:0px;
+	height:450px;
+}
+
+#content h1{
+	margin:0px;
+	padding:0px;
 }
 
 #content ul{
 	text-align: center;
 	list-style:none;
+	margin:1px;
+	padding:0px;
+}
+
+#content h1{
+	font-size: 3.0rem;
+	margin:0px;
+	padding:0px;
+
+}
+
+#content p{
+	font-size:1.2rem;
+	text-align: left;
+	width: 90%;
+	margin:1px;
+	padding:0px;
+}
+#content ul li{
+	font-size: 1.2rem;
 }
