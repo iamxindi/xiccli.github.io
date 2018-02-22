@@ -19,9 +19,9 @@ html, body{
 a.skip:active, a.skip:focus, a.skip:hover {
     position:fixed;
     top: auto;
-    left: auto; 
-	width: auto; 
-	height: auto; 
+    left: auto;
+	width: auto;
+	height: auto;
 	overflow: visible;
 	z-index: 999;
 }
@@ -33,7 +33,7 @@ html, body, header, footer{
 }
 header, footer, .logo {
 	background-color: #211D24;
-	color: #DDDDDA; 
+	color: #DDDDDA;
 }
 body{
 	display: flex;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 p{
 	font-family: 'Open Sans', sans-serif;
 }
-h1{ 
+h1{
 	font-size: 1.75em;
 }
 h2{
@@ -197,4 +197,128 @@ footer p{
 	width: 98%;
   	display: block;
   	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+
+
+/*-------MEDIA QUERIES-------*/
+
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  /*photo gallery*/
+  .crafts{
+  	display: block;
+  	margin: auto;
+  	max-width: 1200px;
+  }
+  .photo-cell{
+  	margin-bottom: 2%;
+  	margin-left: 2%;
+  }
+  .top-nav ul{
+    text-align: center;
+  }
+
+  .top-nav ul li, .menu-icon{
+    display: inline-block;
+        border-top: 1px solid red;
+      width:8em;
+      margin-right:-8px;
+  }
+  .logo img{
+    height: 4em;
+    padding-top:0.2em;
+  }
+  /*-----HOMEPAGE-----*/
+  .main-content-crafts{
+  	margin-top: 150px;
+  }
+  /*-----IMAGES PAGE ------*/
+  .photo-grid{
+    display:grid;
+    grid-auto-columns: repeat(2, 1fr);
+  }
+  #item1{
+    grid-column: 1/3;
+  }
+  #item2{
+    grid-column:1/3;
+  }
+  #item3{
+    grid-column:1;
+  }
+  #item4{
+    grid-column:2;
+  }
+  #item5{
+    grid-column:1/3;
+  }
+  #item6{
+    grid-column:1/3;
+  }
+  #item7{
+    grid-column:1/3;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /*mobile-first*/
+
+  .top-nav ul{
+    padding-top:1.5em;;
+      float:right;
+      padding-right:0.75em;
+  }
+
+  .top-nav ul li, .menu-icon{
+    display: inline-block;
+    border-top: 0px;
+  }
+
+  .logo{
+  	background-color: #black;
+  	margin: 0.8px;
+  	text-align: center;
+  	padding: .25em .75em;
+    float:left;
+  }
+  .logo img{
+  	height: 4em;
+    padding-top:0.2em;
+  }
+  .main-content-crafts{
+  	margin-top: 100px;
+  }
+  /*photo gallery*/
+  .crafts{
+  	display: block;
+  	margin: auto;
+  	max-width: 1200px;
+  }
+  .photo-grid{
+    display:grid;
+    grid-auto-columns: repeat(4, 1fr);
+  }
+  #item1{
+    grid-column: 1/3;
+  }
+  #item2{
+    grid-column:3/5;
+  }
+  #item3{
+    grid-column:1;
+  }
+  #item4{
+    grid-column:2;
+  }
+  #item5{
+    grid-column:3/5;
+  }
+  #item6{
+    grid-column:1/3;
+  }
+  #item7{
+    grid-column:3/5;
+  }
 }
