@@ -11,6 +11,7 @@ body {
 	color: #111111;
 	font-family: 'Montserrat', serif;
 	padding: .5%;
+	text-align: center;
 }
 
 form{
@@ -20,14 +21,17 @@ form{
 	border-radius: 2%;
 	padding: 2%;
 	width: 50%;
+	text-align:left;
 }
 
 #promotion{
+	border:0
+	margin:auto;
 	text-align: justify;
 	display:inline-block;
 }
 
-.legend{
+div.legend{
 	font-family: 'Montserrat', serif;
 	font-size:100%;
 }
