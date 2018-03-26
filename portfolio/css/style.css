@@ -5,6 +5,10 @@ html,body{
   height:100%;
 }
 
+body{
+  background: url("../img/gif_back.gif") no-repeat fixed top;
+}
+
 h1{
   font-size:48px;
   font-family:helvetica;
